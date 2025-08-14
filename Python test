@@ -1,3 +1,53 @@
 import tkinter
 m = tkinter.Tk()
 m.mainloop()
+import random
+cards = {14: "Ace",
+         11: "Jack",
+         12: "Queen",
+         13: "King"}
+def draw(x):
+    drawn = []
+    for _ in range(x):
+        card = random.randint(2, 14)
+        drawn.append(card)
+    drawn.sort()
+    hand = []
+    for i in drawn:
+        if i in cards:
+
+            hand.append(cards[i])
+        else:
+            hand.append(str(i))
+    return hand
+
+hand = draw(8)
+discards = 4
+exit = 0
+print("Your hand:", " ".join(hand))
+while exit == 0:
+    print(f"Discards: {discards}")
+    play = input("Discard or play\n").strip().lower()
+    if play == "discard":
+        while discards > 0:
+            discard = input("Cards to discard: ").title().strip().split()
+            cards_discard = 0
+            for i in discard:
+                if i in hand:
+                    hand.remove(i)
+                    cards_discard += 1
+            if cards_discard == 0:
+                print("Please enter cards in your hand")
+                continue
+            hand.extend(draw(cards_discard))
+            print("Updated hand:", " ".join(hand))
+            discards -= 1
+            break
+        if discards <= 0:
+            print("No more discards")
+    elif play == "play":
+        
+        print("Playing a card is not yet implemented.")
+        
+    else:
+        print("Invalid input. Please type 'discard' or 'play'.")
