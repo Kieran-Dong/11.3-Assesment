@@ -1,3 +1,6 @@
-import tkinter
-m = tkinter.Tk()
-m.mainloop()
+from tkinter import *
+root = Tk()
+root.title("tkinterTest")
+w = Label(root, text= 'bylatro')
+w.pack()
+root.mainloop()
