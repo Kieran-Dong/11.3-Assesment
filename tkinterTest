@@ -1,6 +1,6 @@
 from tkinter import *
 root = Tk()
 root.title("tkinterTest")
-w = Label(root, text= 'bylatro')
+w = Label(root, text= 'White Jacket', bg='white', fg='black', font=('romie', 15))
 w.pack()
 root.mainloop()
