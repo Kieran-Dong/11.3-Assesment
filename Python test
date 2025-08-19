@@ -6,31 +6,32 @@ cards = {14: "Ace",
 def draw(x):
     drawn = []
     for _ in range(x):
-        card = random.randint(2, 14)
+        card = random.randint(2, 11)
         drawn.append(card)
-    drawn.sort()
-    hand = []
-    for i in drawn:
-        if i in cards:
-            hand.append(cards[i])
-        else:
-            hand.append(str(i))
-    return hand
+    return drawn
 exit = 0
 hand = draw(2)
 dealer = draw(2)
 print("Dealer's hand:", dealer[1], "and a hidden card")
-print("Your hand:", " ".join(hand))
-while exit == 0:
-    if max(hand) > 21:
-        print("Break. You have exceeded 21.")
-        break
-    play = input("Hit or stay\n").strip().lower()
-    if play == "Hit":
-        
-        print("You chose to hit. Drawing a card...")
-    elif play == "stay":
-        print("You chose to stay.")
-        exit = 1
-    else:
-        print("Invalid input. Please type 'discard' or 'play'.")
+hand = " ".join(hand)
+print(hand)
+print("Your hand:", " ".join(str(hand)))
+while True:
+    try:
+        if max(hand) > 21:
+            print("Bust. You have exceeded 21.")
+            break
+        play = input("Hit or stay\n").strip().lower()
+        if play == "hit":
+            print("You chose to hit. Drawing a card...")
+            new_card = draw(1)[0]
+            hand.append(new_card)
+            print("Your new hand:", " ".join(str(hand)))
+        elif play == "stay":
+            print("You chose to stay.")
+        else:
+            print("Invalid input. Please type 'hit' or 'stay'.")
+            break
+    except ValueError:
+        print("Invalid input. Please type 'hit' or 'stay'.")
+        continue
