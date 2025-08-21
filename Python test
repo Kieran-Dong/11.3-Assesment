@@ -1,8 +1,8 @@
 import random
-cards = {14: "Ace",
-         11: "Jack",
-         12: "Queen",
-         13: "King"}
+cards = {"Ace": 11, 
+         "Jack": 10, 
+         "Queen": 10, 
+         "King": 10}
 def draw(x):
     drawn = []
     for _ in range(x):
@@ -13,20 +13,18 @@ exit = 0
 hand = draw(2)
 dealer = draw(2)
 print("Dealer's hand:", dealer[1], "and a hidden card")
-hand = " ".join(hand)
-print(hand)
-print("Your hand:", " ".join(str(hand)))
+print("Your hand:", " ".join(str(card) for card in hand))
 while True:
     try:
-        if max(hand) > 21:
+        if sum(hand) > 21:
             print("Bust. You have exceeded 21.")
             break
         play = input("Hit or stay\n").strip().lower()
         if play == "hit":
             print("You chose to hit. Drawing a card...")
-            new_card = draw(1)[0]
-            hand.append(new_card)
-            print("Your new hand:", " ".join(str(hand)))
+            new_card = draw(1)
+            hand.append(new_card[0])
+            print("Your new hand:", " ".join(str(card) for card in hand))
         elif play == "stay":
             print("You chose to stay.")
         else:
