@@ -9,11 +9,17 @@ def draw(x):
         card = random.randint(2, 11)
         drawn.append(card)
     return drawn
+def print_hand(hand):
+    fullhand = str(hand)
+    for i in fullhand:
+        if i == "[" or i == "]" or i == ",":
+            fullhand = fullhand.replace(i, "")
+    return fullhand
 exit = 0
 hand = draw(2)
 dealer = draw(2)
 print("Dealer's hand:", dealer[1], "and a hidden card")
-print("Your hand:", " ".join(str(card) for card in hand))
+print("Your hand:", print_hand(hand))
 while True:
     try:
         if sum(hand) > 21:
