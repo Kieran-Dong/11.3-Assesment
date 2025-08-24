@@ -5,11 +5,16 @@ cards = {"Ace": 11,
          "King": 10}
 def draw(x):
     drawn = []
+    card_values = [2, 3, 4, 5, 6, 7, 8, 9, 10, 11] # 11 represents Ace
+    weight = [4, 4, 4, 4, 4, 4, 4, 4, 16, 4] # Adjusted weights for card frequency
     for _ in range(x):
-        card = random.randint(2, 11)
-        drawn.append(card)
+        card = random.choices(card_values, weights=weight, k=1)
+        drawn.append(card[0])
     return drawn
 def print_hand(hand):
+    for i in hand:
+        if i in cards:
+            hand.replace(i, cards[i])
     fullhand = str(hand)
     for i in fullhand:
         if i == "[" or i == "]" or i == ",":
@@ -20,7 +25,7 @@ hand = draw(2)
 dealer = draw(2)
 print("Dealer's hand:", dealer[1], "and a hidden card")
 print("Your hand:", print_hand(hand))
-while True:
+while exit == 0:
     try:
         if sum(hand) > 21:
             print("Bust. You have exceeded 21.")
@@ -30,9 +35,28 @@ while True:
             print("You chose to hit. Drawing a card...")
             new_card = draw(1)
             hand.append(new_card[0])
-            print("Your new hand:", " ".join(str(card) for card in hand))
+            print("Your new hand:", print_hand(hand))
         elif play == "stay":
             print("You chose to stay.")
+            print("Dealer's hand:", print_hand(dealer))
+            while sum(dealer) <= 21:
+                if sum(dealer) < sum(hand):
+                    print("Dealer draws a card...")
+                    new_card = draw(1)
+                    dealer.append(new_card[0])
+                    print("Dealer's hand:", print_hand(dealer))
+                elif sum(dealer) > sum(hand) and sum(dealer) <= 21:
+                    print("Dealer wins with", sum(dealer), "against your", sum(hand))
+                    exit = 1
+                    break
+                elif sum(dealer) == sum(hand):
+                    print("It's a tie at", sum(hand))
+                    exit = 1
+                    break
+            else:
+                print("Dealer busts. You win!")
+                exit = 1
+                break
         else:
             print("Invalid input. Please type 'hit' or 'stay'.")
             break
