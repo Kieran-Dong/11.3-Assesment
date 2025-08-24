@@ -1,8 +1,4 @@
 import random
-cards = {"Ace": 11, 
-         "Jack": 10, 
-         "Queen": 10, 
-         "King": 10}
 def draw(x):
     drawn = []
     card_values = [2, 3, 4, 5, 6, 7, 8, 9, 10, 11] # 11 represents Ace
@@ -13,8 +9,11 @@ def draw(x):
     return drawn
 def print_hand(hand):
     for i in hand:
-        if i in cards:
-            hand.replace(i, cards[i])
+        if i == 11 or i == 1:
+            hand[hand.index(i)] = 'A'
+        elif i == 10:
+            options = ['10', 'J', 'Q', 'K']
+            hand[hand.index(i)] = random.choice(options)
     fullhand = str(hand)
     for i in fullhand:
         if i == "[" or i == "]" or i == ",":
