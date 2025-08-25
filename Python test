@@ -8,25 +8,28 @@ def draw(x):
         drawn.append(card[0])
     return drawn
 def print_hand(hand):
-    for i in hand:
-        if i == 11 or i == 1:
-            hand[hand.index(i)] = 'A'
-        elif i == 10:
-            options = ['10', 'J', 'Q', 'K']
-            hand[hand.index(i)] = random.choice(options)
-    fullhand = str(hand)
+    fullhand = hand.copy()
     for i in fullhand:
-        if i == "[" or i == "]" or i == ",":
+        if i == 10:
+            options = [10, 'J', 'Q', 'K']
+            fullhand[fullhand.index(i)] = random.choice(options)
+        elif i == 11 or i == 1:
+            fullhand[fullhand.index(i)] = "A"
+    fullhand = str(fullhand)
+    for i in fullhand:
+        if i == "[" or i == "]" or i == "," or i == "'":
             fullhand = fullhand.replace(i, "")
     return fullhand
-exit = 0
+game_over = 0
 hand = draw(2)
 dealer = draw(2)
 print("Dealer's hand:", dealer[1], "and a hidden card")
 print("Your hand:", print_hand(hand))
-while exit == 0:
+while game_over == 0:
     try:
-        if sum(hand) > 21:
+        hand_sum = sum(hand)
+        dealer_sum = sum(dealer)
+        if hand_sum > 21:
             print("Bust. You have exceeded 21.")
             break
         play = input("Hit or stay\n").strip().lower()
@@ -38,18 +41,21 @@ while exit == 0:
         elif play == "stay":
             print("You chose to stay.")
             print("Dealer's hand:", print_hand(dealer))
-            while sum(dealer) <= 21:
-                if sum(dealer) < sum(hand):
+            while dealer_sum <= 21:
+                hand_sum = sum(hand)
+                dealer_sum = sum(dealer)
+                if dealer_sum < hand_sum:
                     print("Dealer draws a card...")
                     new_card = draw(1)
                     dealer.append(new_card[0])
                     print("Dealer's hand:", print_hand(dealer))
-                elif sum(dealer) > sum(hand) and sum(dealer) <= 21:
-                    print("Dealer wins with", sum(dealer), "against your", sum(hand))
-                    exit = 1
+                    dealer_sum = sum(dealer)
+                elif dealer_sum > hand_sum and dealer_sum <= 21:
+                    print("Dealer wins with", dealer_sum, "against your", hand_sum)
+                    game_over = 1
                     break
-                elif sum(dealer) == sum(hand):
-                    print("It's a tie at", sum(hand))
+                elif dealer_sum == hand_sum:
+                    print("It's a tie at", hand_sum)
                     exit = 1
                     break
             else:
