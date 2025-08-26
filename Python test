@@ -4,15 +4,23 @@ def draw(x):
     card_values = [2, 3, 4, 5, 6, 7, 8, 9, 10, 11] # 11 represents Ace
     weight = [4, 4, 4, 4, 4, 4, 4, 4, 16, 4] # Adjusted weights for card frequency
     for _ in range(x):
-        card = random.choices(card_values, weights=weight, k=1)
+        card = random.choices(card_values, weights=weight, k=1) # Draw a random card based on weights
         drawn.append(card[0])
     return drawn
+reiterated = []
 def print_hand(hand):
+    n = -1
     fullhand = hand.copy()
     for i in fullhand:
         if i == 10:
-            options = [10, 'J', 'Q', 'K']
-            fullhand[fullhand.index(i)] = random.choice(options)
+            if len(reiterated) > 0:
+                fullhand[fullhand.index(i)] = reiterated[n]
+                n += 1
+            else:
+                options = [10, 'J', 'Q', 'K']
+                face_card = random.choice(options)
+                fullhand[fullhand.index(i)] = face_card
+                reiterated.append(face_card)
         elif i == 11 or i == 1:
             fullhand[fullhand.index(i)] = "A"
     fullhand = str(fullhand)
@@ -22,16 +30,21 @@ def print_hand(hand):
     return fullhand
 game_over = 0
 hand = draw(2)
-dealer = draw(2)
-print("Dealer's hand:", dealer[1], "and a hidden card")
+dealer = draw(1)
+print("Dealer's hand:", print_hand(dealer), "and a hidden card")
 print("Your hand:", print_hand(hand))
 while game_over == 0:
     try:
         hand_sum = sum(hand)
         dealer_sum = sum(dealer)
         if hand_sum > 21:
-            print("Bust. You have exceeded 21.")
-            break
+            if 11 in hand:
+                hand[hand.index(11)] = 1
+                hand_sum = sum(hand)
+                continue
+            else:
+                print("Bust. You have exceeded 21.")
+                break
         play = input("Hit or stand\n").strip().lower()
         if play == "hit":
             print("You chose to hit. Drawing a card...")
@@ -40,6 +53,8 @@ while game_over == 0:
             print("Your new hand:", print_hand(hand))
         elif play == "stand":
             print("You chose to stand.")
+            new_card = draw(1)
+            dealer.append(new_card[0])
             print("Dealer's hand:", print_hand(dealer))
             while dealer_sum <= 21:
                 hand_sum = sum(hand)
@@ -64,7 +79,6 @@ while game_over == 0:
                 break
         else:
             print("Invalid input. Please type 'hit' or 'stand'.")
-            break
     except ValueError:
         print("Invalid input. Please type 'hit' or 'stand'.")
         continue
