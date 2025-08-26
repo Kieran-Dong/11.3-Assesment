@@ -32,14 +32,14 @@ while game_over == 0:
         if hand_sum > 21:
             print("Bust. You have exceeded 21.")
             break
-        play = input("Hit or stay\n").strip().lower()
+        play = input("Hit or stand\n").strip().lower()
         if play == "hit":
             print("You chose to hit. Drawing a card...")
             new_card = draw(1)
             hand.append(new_card[0])
             print("Your new hand:", print_hand(hand))
-        elif play == "stay":
-            print("You chose to stay.")
+        elif play == "stand":
+            print("You chose to stand.")
             print("Dealer's hand:", print_hand(dealer))
             while dealer_sum <= 21:
                 hand_sum = sum(hand)
@@ -63,8 +63,8 @@ while game_over == 0:
                 exit = 1
                 break
         else:
-            print("Invalid input. Please type 'hit' or 'stay'.")
+            print("Invalid input. Please type 'hit' or 'stand'.")
             break
     except ValueError:
-        print("Invalid input. Please type 'hit' or 'stay'.")
+        print("Invalid input. Please type 'hit' or 'stand'.")
         continue
