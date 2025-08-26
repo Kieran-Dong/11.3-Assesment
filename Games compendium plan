@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36" version="28.1.1">
   <diagram name="Page-1" id="D46sX8x3v9R1Tmd9oDHT">
-    <mxGraphModel dx="640" dy="125" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1215" dy="425" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -39,7 +39,7 @@
         <mxCell id="bdKi6rwACXbWirlAWbkX-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" target="EcMNOicBsOqpqexVAU-N-27" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="423" y="645" as="targetPoint" />
-            <mxPoint x="423" y="1090" as="sourcePoint" />
+            <mxPoint x="423" y="1230" as="sourcePoint" />
             <Array as="points">
               <mxPoint x="423" y="1300" />
               <mxPoint x="615" y="1300" />
@@ -218,14 +218,16 @@
         <mxCell id="EcMNOicBsOqpqexVAU-N-93" value="&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&lt;font style=&quot;font-size: 10px;&quot;&gt;Input stay&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;align=center;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
           <mxGeometry x="468" y="810" width="80.5" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="EcMNOicBsOqpqexVAU-N-104" value="&lt;span style=&quot;font-size: 10px;&quot;&gt;dealer will draw as many times as it takes&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
-          <mxGeometry x="520" y="1010" width="90" height="40" as="geometry" />
+        <mxCell id="EcMNOicBsOqpqexVAU-N-104" value="&lt;span style=&quot;font-size: 10px;&quot;&gt;Dealer will draw as many times as it takes&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="520" y="1010" width="80" height="40" as="geometry" />
         </mxCell>
         <mxCell id="EcMNOicBsOqpqexVAU-N-113" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="EcMNOicBsOqpqexVAU-N-110" target="EcMNOicBsOqpqexVAU-N-104">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="EcMNOicBsOqpqexVAU-N-121" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="EcMNOicBsOqpqexVAU-N-110" target="EcMNOicBsOqpqexVAU-N-120">
-          <mxGeometry relative="1" as="geometry" />
+        <mxCell id="EcMNOicBsOqpqexVAU-N-121" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="EcMNOicBsOqpqexVAU-N-110">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="450.0000000000002" y="1009.9999999999998" as="targetPoint" />
+          </mxGeometry>
         </mxCell>
         <mxCell id="EcMNOicBsOqpqexVAU-N-110" value="&lt;font style=&quot;font-size: 9px;&quot;&gt;If smaller than players&lt;/font&gt;" style="rhombus;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
           <mxGeometry x="483.25" y="940" width="50" height="50" as="geometry" />
@@ -239,14 +241,76 @@
         <mxCell id="EcMNOicBsOqpqexVAU-N-115" value="&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;font-size: 10px;&quot;&gt;Will reveal dealer&#39;s full hand&lt;/span&gt;&lt;/div&gt;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;align=center;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
           <mxGeometry x="468" y="880" width="80.5" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="EcMNOicBsOqpqexVAU-N-116" value="&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;font-size: 10.6px;&quot;&gt;will draw a card to player&#39;s hand&lt;/span&gt;&lt;/div&gt;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;align=center;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
+        <mxCell id="EcMNOicBsOqpqexVAU-N-116" value="&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;font-size: 10.6px;&quot;&gt;Will draw a card to player&#39;s hand&lt;/span&gt;&lt;/div&gt;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;align=center;fillColor=#e1d5e7;strokeColor=#9673a6;size=12.5;" vertex="1" parent="1">
           <mxGeometry x="297.5" y="880" width="80.5" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="EcMNOicBsOqpqexVAU-N-120" value="&lt;span style=&quot;font-size: 10px;&quot;&gt;else dealer wins&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;glass=0;" vertex="1" parent="1">
-          <mxGeometry x="410" y="1010" width="90" height="40" as="geometry" />
+        <mxCell id="EcMNOicBsOqpqexVAU-N-136" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="EcMNOicBsOqpqexVAU-N-123" target="EcMNOicBsOqpqexVAU-N-133">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="EcMNOicBsOqpqexVAU-N-123" value="&lt;font style=&quot;font-size: 9px;&quot;&gt;If smaller than players&lt;/font&gt;" style="rhombus;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
-          <mxGeometry x="483.25" y="1070" width="50" height="50" as="geometry" />
+        <mxCell id="EcMNOicBsOqpqexVAU-N-123" value="&lt;font style=&quot;font-size: 9px;&quot;&gt;If larger than 21&lt;/font&gt;" style="rhombus;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="483.25" y="1100" width="50" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="EcMNOicBsOqpqexVAU-N-128" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" target="EcMNOicBsOqpqexVAU-N-123">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="560" y="1050" as="sourcePoint" />
+            <mxPoint x="592" y="1095" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="560" y="1070" />
+              <mxPoint x="508" y="1070" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EcMNOicBsOqpqexVAU-N-130" value="&lt;span style=&quot;font-size: 10px;&quot;&gt;Else dealer wins&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="410" y="1010" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="EcMNOicBsOqpqexVAU-N-131" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="EcMNOicBsOqpqexVAU-N-123" target="EcMNOicBsOqpqexVAU-N-130">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="508" y="1089.9999999999995" as="sourcePoint" />
+            <mxPoint x="456" y="1049.9999999999995" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="508" y="1070" />
+              <mxPoint x="450" y="1070" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EcMNOicBsOqpqexVAU-N-133" value="&lt;span style=&quot;font-size: 10px;&quot;&gt;Dealer busts&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="468.5" y="1170" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="EcMNOicBsOqpqexVAU-N-138" value="&lt;span style=&quot;font-size: 10px;&quot;&gt;You win&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="463" y="1240" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="EcMNOicBsOqpqexVAU-N-157" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="EcMNOicBsOqpqexVAU-N-158" target="EcMNOicBsOqpqexVAU-N-167">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="270" y="1000" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EcMNOicBsOqpqexVAU-N-158" value="&lt;font style=&quot;font-size: 9px;&quot;&gt;If smaller than 21&lt;/font&gt;" style="rhombus;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="312.75" y="940" width="50" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="EcMNOicBsOqpqexVAU-N-159" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="EcMNOicBsOqpqexVAU-N-160" target="EcMNOicBsOqpqexVAU-N-164">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="EcMNOicBsOqpqexVAU-N-160" value="&lt;font style=&quot;font-size: 9px;&quot;&gt;If larger than 21&lt;/font&gt;" style="rhombus;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="316" y="1100" width="50" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="EcMNOicBsOqpqexVAU-N-163" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="EcMNOicBsOqpqexVAU-N-160" target="EcMNOicBsOqpqexVAU-N-167">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="340.75" y="1089.9999999999995" as="sourcePoint" />
+            <mxPoint x="270" y="1040" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="341" y="1080" />
+              <mxPoint x="273" y="1080" />
+              <mxPoint x="273" y="1050" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EcMNOicBsOqpqexVAU-N-164" value="&lt;span style=&quot;font-size: 10px;&quot;&gt;You bust&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="301.25" y="1170" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="EcMNOicBsOqpqexVAU-N-167" value="&lt;font style=&quot;font-size: 8px;&quot;&gt;&lt;span style=&quot;color: rgb(0, 0, 0);&quot;&gt;Prompt&amp;nbsp;&lt;/span&gt;&lt;font style=&quot;color: rgb(0, 0, 0);&quot;&gt;Hit or stay again&lt;/font&gt;&lt;/font&gt;" style="rhombus;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;container=0;" vertex="1" parent="1">
+          <mxGeometry x="247.5" y="1000" width="50" height="50" as="geometry">
+            <mxRectangle x="247.5" y="1000" width="110" height="30" as="alternateBounds" />
+          </mxGeometry>
         </mxCell>
       </root>
     </mxGraphModel>
