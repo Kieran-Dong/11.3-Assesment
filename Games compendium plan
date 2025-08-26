@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36" version="28.1.1">
   <diagram name="Page-1" id="D46sX8x3v9R1Tmd9oDHT">
-    <mxGraphModel dx="1215" dy="425" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1588" dy="619" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -285,30 +285,19 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="EcMNOicBsOqpqexVAU-N-158" value="&lt;font style=&quot;font-size: 9px;&quot;&gt;If smaller than 21&lt;/font&gt;" style="rhombus;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
-          <mxGeometry x="312.75" y="940" width="50" height="50" as="geometry" />
+          <mxGeometry x="280" y="940" width="50" height="50" as="geometry" />
         </mxCell>
         <mxCell id="EcMNOicBsOqpqexVAU-N-159" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="EcMNOicBsOqpqexVAU-N-160" target="EcMNOicBsOqpqexVAU-N-164">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="EcMNOicBsOqpqexVAU-N-160" value="&lt;font style=&quot;font-size: 9px;&quot;&gt;If larger than 21&lt;/font&gt;" style="rhombus;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
-          <mxGeometry x="316" y="1100" width="50" height="50" as="geometry" />
-        </mxCell>
-        <mxCell id="EcMNOicBsOqpqexVAU-N-163" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="EcMNOicBsOqpqexVAU-N-160" target="EcMNOicBsOqpqexVAU-N-167">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="340.75" y="1089.9999999999995" as="sourcePoint" />
-            <mxPoint x="270" y="1040" as="targetPoint" />
-            <Array as="points">
-              <mxPoint x="341" y="1080" />
-              <mxPoint x="273" y="1080" />
-              <mxPoint x="273" y="1050" />
-            </Array>
-          </mxGeometry>
+          <mxGeometry x="343" y="940" width="50" height="50" as="geometry" />
         </mxCell>
         <mxCell id="EcMNOicBsOqpqexVAU-N-164" value="&lt;span style=&quot;font-size: 10px;&quot;&gt;You bust&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
-          <mxGeometry x="301.25" y="1170" width="80" height="40" as="geometry" />
+          <mxGeometry x="328" y="1010" width="80" height="40" as="geometry" />
         </mxCell>
         <mxCell id="EcMNOicBsOqpqexVAU-N-167" value="&lt;font style=&quot;font-size: 8px;&quot;&gt;&lt;span style=&quot;color: rgb(0, 0, 0);&quot;&gt;Prompt&amp;nbsp;&lt;/span&gt;&lt;font style=&quot;color: rgb(0, 0, 0);&quot;&gt;Hit or stay again&lt;/font&gt;&lt;/font&gt;" style="rhombus;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;container=0;" vertex="1" parent="1">
-          <mxGeometry x="247.5" y="1000" width="50" height="50" as="geometry">
+          <mxGeometry x="230" y="1000" width="50" height="50" as="geometry">
             <mxRectangle x="247.5" y="1000" width="110" height="30" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
