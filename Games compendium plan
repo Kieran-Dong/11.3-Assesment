@@ -363,27 +363,22 @@
         <mxCell id="vMPTvg8GCU5s8bdNNwfD-59" value="create a 8 by 4 setup of cards" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
           <mxGeometry x="830" y="691" width="90.99592312172395" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="vMPTvg8GCU5s8bdNNwfD-68" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="vMPTvg8GCU5s8bdNNwfD-60" target="vMPTvg8GCU5s8bdNNwfD-65">
-          <mxGeometry relative="1" as="geometry" />
+        <mxCell id="vMPTvg8GCU5s8bdNNwfD-68" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="vMPTvg8GCU5s8bdNNwfD-60">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="875.5714285714284" y="850.0686940421328" as="targetPoint" />
+          </mxGeometry>
         </mxCell>
         <mxCell id="vMPTvg8GCU5s8bdNNwfD-60" value="Only consists of face cards and aces with different suits" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
           <mxGeometry x="819.76" y="761" width="111.47" height="49" as="geometry" />
         </mxCell>
-        <mxCell id="vMPTvg8GCU5s8bdNNwfD-69" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="vMPTvg8GCU5s8bdNNwfD-65">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="960" y="880" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="vMPTvg8GCU5s8bdNNwfD-70" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="vMPTvg8GCU5s8bdNNwfD-65">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="876" y="950" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="vMPTvg8GCU5s8bdNNwfD-65" value="&lt;span style=&quot;font-size: 13px;&quot;&gt;Player selects a card&lt;/span&gt;" style="rhombus;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
-          <mxGeometry x="845.17" y="850" width="60.66394874781595" height="60" as="geometry" />
-        </mxCell>
         <mxCell id="vMPTvg8GCU5s8bdNNwfD-72" value="Randomize the card and save it to that spot" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
-          <mxGeometry x="830" y="951" width="90.99592312172395" height="40" as="geometry" />
+          <mxGeometry x="830" y="932.07" width="90.99592312172395" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="vMPTvg8GCU5s8bdNNwfD-78" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="vMPTvg8GCU5s8bdNNwfD-77" target="vMPTvg8GCU5s8bdNNwfD-72">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="vMPTvg8GCU5s8bdNNwfD-77" value="&lt;div style=&quot;&quot;&gt;&lt;font style=&quot;font-size: 11px;&quot;&gt;Player selects a card&lt;/font&gt;&lt;/div&gt;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;align=center;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
+          <mxGeometry x="834.8" y="851" width="81.39079790331974" height="40" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
