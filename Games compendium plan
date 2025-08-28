@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36" version="28.1.1">
   <diagram name="Page-1" id="D46sX8x3v9R1Tmd9oDHT">
-    <mxGraphModel dx="2078" dy="874" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1826" dy="743" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -38,6 +38,9 @@
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="262.09" y="1640" as="targetPoint" />
           </mxGeometry>
+        </mxCell>
+        <mxCell id="stHLw0QqfCxe7Hl1Giwu-93" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="EcMNOicBsOqpqexVAU-N-31" target="stHLw0QqfCxe7Hl1Giwu-92">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="EcMNOicBsOqpqexVAU-N-31" value="&lt;span style=&quot;font-size: 11px;&quot;&gt;Create aesthetics for the program&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;rotation=0;perimeterSpacing=0;strokeWidth=1;arcSize=50;fillColor=#f8cecc;strokeColor=#b85450;" parent="1" vertex="1">
           <mxGeometry x="365.09" y="1810" width="120" height="60" as="geometry" />
@@ -131,8 +134,11 @@
         <mxCell id="bdKi6rwACXbWirlAWbkX-5" value="Memory game" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
           <mxGeometry x="840.2415725101921" y="541" width="90.99592312172395" height="40" as="geometry" />
         </mxCell>
+        <mxCell id="stHLw0QqfCxe7Hl1Giwu-96" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="bdKi6rwACXbWirlAWbkX-7" target="stHLw0QqfCxe7Hl1Giwu-95">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="bdKi6rwACXbWirlAWbkX-7" value="Diceroll game" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
-          <mxGeometry x="1130.004076878276" y="531" width="90.99592312172395" height="40" as="geometry" />
+          <mxGeometry x="1130.004076878276" y="541" width="90.99592312172395" height="40" as="geometry" />
         </mxCell>
         <mxCell id="EcMNOicBsOqpqexVAU-N-25" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="EcMNOicBsOqpqexVAU-N-8" target="EcMNOicBsOqpqexVAU-N-21" edge="1">
           <mxGeometry relative="1" as="geometry" />
@@ -378,8 +384,8 @@
         <mxCell id="stHLw0QqfCxe7Hl1Giwu-7" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="vMPTvg8GCU5s8bdNNwfD-60" target="vMPTvg8GCU5s8bdNNwfD-77">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="vMPTvg8GCU5s8bdNNwfD-60" value="Only consists of face cards and aces with different suits" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
-          <mxGeometry x="830" y="780" width="111.47" height="49" as="geometry" />
+        <mxCell id="vMPTvg8GCU5s8bdNNwfD-60" value="&lt;font style=&quot;font-size: 9px;&quot;&gt;Only consists of face cards and aces with different suits&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
+          <mxGeometry x="840.24" y="771" width="91" height="40" as="geometry" />
         </mxCell>
         <mxCell id="stHLw0QqfCxe7Hl1Giwu-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="vMPTvg8GCU5s8bdNNwfD-72">
           <mxGeometry relative="1" as="geometry">
@@ -555,6 +561,54 @@
         </mxCell>
         <mxCell id="stHLw0QqfCxe7Hl1Giwu-90" value="&lt;font&gt;Aces will be worth 10 however&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
           <mxGeometry x="960" y="1106" width="90.99592312172395" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="stHLw0QqfCxe7Hl1Giwu-92" value="&lt;span style=&quot;font-size: 20px;&quot;&gt;Finish program&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;rotation=0;perimeterSpacing=0;strokeWidth=1;arcSize=50;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="335.09" y="1920" width="180" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="stHLw0QqfCxe7Hl1Giwu-98" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="stHLw0QqfCxe7Hl1Giwu-95" target="stHLw0QqfCxe7Hl1Giwu-97">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="stHLw0QqfCxe7Hl1Giwu-95" value="&lt;span style=&quot;font-size: 11px;&quot;&gt;Code in probabilities for different numbers&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="1130" y="621" width="90.99592312172395" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="stHLw0QqfCxe7Hl1Giwu-101" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="stHLw0QqfCxe7Hl1Giwu-97" target="stHLw0QqfCxe7Hl1Giwu-100">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="stHLw0QqfCxe7Hl1Giwu-97" value="&lt;span style=&quot;font-size: 11px;&quot;&gt;Chances will not be 1 in 6 for all numbers&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="1130" y="691" width="90.99592312172395" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="stHLw0QqfCxe7Hl1Giwu-103" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="stHLw0QqfCxe7Hl1Giwu-100" target="stHLw0QqfCxe7Hl1Giwu-102">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="stHLw0QqfCxe7Hl1Giwu-100" value="&lt;font style=&quot;font-size: 9px;&quot;&gt;Three dices are rolled and candy is bet&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="1130" y="771" width="91" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="stHLw0QqfCxe7Hl1Giwu-106" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="stHLw0QqfCxe7Hl1Giwu-102" target="stHLw0QqfCxe7Hl1Giwu-105">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="stHLw0QqfCxe7Hl1Giwu-102" value="&lt;font size=&quot;1&quot;&gt;If three of one number is rolled, your candy triples&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="1130" y="881" width="91" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="stHLw0QqfCxe7Hl1Giwu-105" value="&lt;font size=&quot;1&quot;&gt;If three unique numbers are rolled, all money are lost&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="1130" y="946" width="91" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="stHLw0QqfCxe7Hl1Giwu-108" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" target="stHLw0QqfCxe7Hl1Giwu-109">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1221" y="790" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="1221" y="791" />
+              <mxPoint x="1295" y="791" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="stHLw0QqfCxe7Hl1Giwu-113" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="stHLw0QqfCxe7Hl1Giwu-109" target="stHLw0QqfCxe7Hl1Giwu-112">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="stHLw0QqfCxe7Hl1Giwu-109" value="Can only bet up to 50% of candy at first" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="1250" y="691" width="90.99592312172395" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="stHLw0QqfCxe7Hl1Giwu-112" value="As you gain candy you can bet more" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="1250" y="621" width="90.99592312172395" height="40" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
