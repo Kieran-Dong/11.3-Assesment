@@ -1,7 +1,7 @@
 import random
 def roll_dice(x):
-    dices = [1, 2, 3, 4, 5, 6, 7]
-    weight = [6, 6, 6, 6, 5, 3, 1] # Adjusted weights for dice frequency
+    dices = [1, 2, 3, 4, 5, 6, 7, 8] # 7 and 8 are special dice
+    weight = [10, 10, 10, 10, 8, 5, 2, 0.5] # Adjusted weights for dice frequency
     value = random.choices(dices, weights=weight, k=x)
     return value
 
@@ -18,7 +18,6 @@ while True:
     while True:
         try:
             bet = int(input("Enter your bet amount: "))
-            print(money)
             if bet > money * percent:
                 print(f"You cannot bet more than {int(percent * 100)}% of your current money.")
             elif bet <= 0:
@@ -31,7 +30,26 @@ while True:
     print("The values are...")
     dice = roll_dice(3)
     print(print_dice(dice))
+    gained = False
+    for i in dice:
+        if dice.count(i) == 3:
+            if dice.count(7) == 3:
+                money += bet * 10
+                print(f"You rolled three 7's! Jackpot! You win ${bet * 100}.")
+            else:
+                money += bet * i
+                print(f"You rolled three {i}'s! You win ${bet * i}.")
+            gained = True
+            break
+        elif dice.count(i) == 2:
+            money += bet + i * 10
+            print(f"You rolled a pair of {i}'s! You win ${bet + i * 10}.")
+            gained = True
+            break
+    if gained == False:
+        print("No matches. You lose your bet.")
     money -= bet
+    print(f"You now have ${money}.")
     if money <= 0:
         print("You have run out of money. Game over.")
         break
