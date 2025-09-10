@@ -1,7 +1,7 @@
 import random
 def roll_dice(x):
     dices = [1, 2, 3, 4, 5, 6, 7, 8] # 7 and 8 are special dice
-    weight = [10, 10, 10, 10, 8, 5, 2, 0.5] # Adjusted weights for dice frequency
+    weight = [10, 10, 10, 10, 8, 3, 2, 0.5] # Adjusted weights for dice frequency
     value = random.choices(dices, weights=weight, k=x)
     return value
 
@@ -34,16 +34,31 @@ while True:
     for i in dice:
         if dice.count(i) == 3:
             if dice.count(7) == 3:
-                money += bet * 10
-                print(f"You rolled three 7's! Jackpot! You win ${bet * 100}.")
+                money += bet * i * 100
+                print(f"You rolled three 7's! Jackpot! You win ${bet * i * 100}.")
             else:
-                money += bet * i
-                print(f"You rolled three {i}'s! You win ${bet * i}.")
+                money += bet * i ** 2
+                print(f"You rolled three {i}'s! You win ${bet * i ** 2}.")
             gained = True
             break
         elif dice.count(i) == 2:
-            money += bet + i * 10
-            print(f"You rolled a pair of {i}'s! You win ${bet + i * 10}.")
+            money += bet * i
+            print(f"You rolled a pair of {i}'s! You win ${bet * i}.")
+            gained = True
+            break
+        elif dice.count(8) == 1:
+            print(f"You rolled an eight! You win $1000.")
+            money += 500
+            gained = True
+            break
+        elif dice.count(7) == 1:
+            money += 250
+            print(f"You rolled seven, you win $500.")
+            gained = True
+            break
+        elif dice.count(6) == 1:
+            money += 100
+            print(f"You rolled six, you win $250.")
             gained = True
             break
     if gained == False:
